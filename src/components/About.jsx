@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import { FaFacebook, FaInstagram, FaTwitter } from "react-icons/fa";
-import '../styles/shapeStyle.css'
+import "../styles/shapeStyle.css";
+import { motion } from "framer-motion";
 
 const About = () => {
   return (

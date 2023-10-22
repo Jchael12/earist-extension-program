@@ -7,6 +7,8 @@ import News from './components/News'
 import Home from './components/Home'
 import NotFound from './components/NotFound'
 
+// import specific data card routes
+
 const AppRoutes = () => {
   return (
     <Routes>

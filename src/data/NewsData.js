@@ -13,7 +13,7 @@ const images = [
     title: "News 1",
     description:
       "Lorem ipsum dolor sit amet, qui minim labore adipisicing minim sint cillum sint consectetur cupidatat.",
-    link: "/",
+    link: "/earist-extension-program/news1",
   },
   {
     id: 2,
@@ -21,7 +21,7 @@ const images = [
     title: "News 2",
     description:
       "Lorem ipsum dolor sit amet, qui minim labore adipisicing minim sint cillum sint consectetur cupidatat.",
-    link: "/",
+    link: "/earist-extension-program/news2",
   },
   {
     id: 3,
@@ -29,7 +29,7 @@ const images = [
     title: "News 3",
     description:
       "Lorem ipsum dolor sit amet, qui minim labore adipisicing minim sint cillum sint consectetur cupidatat.",
-    link: "/",
+    link: "/earist-extension-program/news3",
   },
   {
     id: 4,
@@ -37,7 +37,7 @@ const images = [
     title: "News 4",
     description:
       "Lorem ipsum dolor sit amet, qui minim labore adipisicing minim sint cillum sint consectetur cupidatat.",
-    link: "/",
+    link: "/earist-extension-program/news4",
   },
   {
     id: 5,
@@ -45,7 +45,7 @@ const images = [
     title: "News 5",
     description:
       "Lorem ipsum dolor sit amet, qui minim labore adipisicing minim sint cillum sint consectetur cupidatat.",
-    link: "/",
+    link: "/earist-extension-program/news5",
   },
   {
     id: 6,
@@ -53,7 +53,7 @@ const images = [
     title: "News 6",
     description:
       "Lorem ipsum dolor sit amet, qui minim labore adipisicing minim sint cillum sint consectetur cupidatat.",
-    link: "/",
+    link: "/earist-extension-program/news6",
   },
 ];
 

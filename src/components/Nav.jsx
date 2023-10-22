@@ -22,6 +22,18 @@ function Nav() {
     }
   };
 
+ // Function to handle link clicks and scroll to top
+  const handleLinkClick = (path) => {
+    if (window.location.pathname === path) {
+      window.scrollTo(0, 0);
+    } else {
+      history.push(path);
+    }
+    if (isOpen) {
+      setIsOpen(false);
+    }
+  };
+
   return (
     <header className="w-full p-8 bg-[#fafafa]/80 backdrop-blur-sm fixed top-0 z-10 ">
       <nav className=" flex items-center justify-between gap-32">
@@ -78,19 +90,22 @@ function Nav() {
         </div>
         <div className="hidden md:flex gap-10 text-gray-700 text-xl">
           <Link
-            className="dark:text-white dark:hover:text-[#dc2626] hover:bg-red-800 hover:p-2 p-2 ease-in-out duration-300 hover:text-amber-300 rounded-sm"
+            onClick={() => handleLinkClick("/earist-extension-program/")}
+            className="text-red-900 hover:bg-red-800 hover:p-2 p-2 ease-in-out duration-300 hover:text-amber-300 rounded-sm"
             to="/earist-extension-program/"
           >
             Home
           </Link>
           <Link
-            className="dark:text-white dark:hover:text-[#dc2626] hover:bg-red-800 hover:p-2 p-2 ease-in-out duration-300 hover:text-amber-300 rounded-sm"
+            onClick={() => handleLinkClick("/earist-extension-program/")}
+            className="text-red-900 hover:bg-red-800 hover:p-2 p-2 ease-in-out duration-300 hover:text-amber-300 rounded-sm"
             to="/earist-extension-program/programs"
           >
             Programs & Events
           </Link>
           <Link
-            className="dark:text-white dark:hover:text-[#dc2626] hover:bg-red-800 hover:p-2 ease-in-out duration-300 hover:text-amber-300 rounded-sm p-2"
+            onClick={() => handleLinkClick("/earist-extension-program/")}
+            className="text-red-900 hover:bg-red-800 hover:p-2 ease-in-out duration-300 hover:text-amber-300 rounded-sm p-2"
             to="/earist-extension-program/news"
           >
             News
