@@ -17,14 +17,37 @@
 }
 
 .custom-shape-divider-bottom-1697795198 .shape-fill {
-  fill: #7f1d1d;
+  fill: #991B1B;
 }
 
 /* bottom divider */
 
 .custom-shape-divider-bottom-1697799949 {
+  position: absolute;
+  bottom: -885px;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1697799949 svg {
+  position: relative;
+  display: block;
+  width: calc(150% + 1.3px);
+  height: 70px;
+  transform: rotateY(180deg);
+}
+
+.custom-shape-divider-bottom-1697799949 .shape-fill {
+  fill: #991B1B;
+}
+
+/* bottom divider in about  */
+.custom-shape-divider-bottom-1697985040 {
     position: absolute;
-    bottom: -885px;
+    bottom: -235px;
     left: 0;
     width: 100%;
     overflow: hidden;
@@ -32,14 +55,13 @@
     transform: rotate(180deg);
 }
 
-.custom-shape-divider-bottom-1697799949 svg {
+.custom-shape-divider-bottom-1697985040 svg {
     position: relative;
     display: block;
-    width: calc(150% + 1.3px);
-    height: 70px;
-    transform: rotateY(180deg);
+    width: calc(100% + 1.3px);
+    height: 333px;
 }
 
-.custom-shape-divider-bottom-1697799949 .shape-fill {
-    fill: #7f1d1d;
+.custom-shape-divider-bottom-1697985040 .shape-fill {
+    fill: #991B1B;
 }

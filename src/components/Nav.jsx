@@ -35,8 +35,8 @@ function Nav() {
   };
 
   return (
-    <header className="w-full p-8 bg-[#fafafa]/80 backdrop-blur-sm fixed top-0 z-10 ">
-      <nav className=" flex items-center justify-between gap-32">
+    <header className="w-full p-8 bg-[#fafafa]/80 backdrop-blur-sm fixed top-0 z-20 ">
+      <nav className=" flex items-center justify-between gap-32 z-10">
         <div>
           <svg
             xmlns="http://www.w3.org/2000/svg"
