@@ -56,21 +56,21 @@ function Nav() {
             <Link
               onClick={closeMenu}
               className="dark:text-white dark:hover:text-[#dc2626] ease-in-out duration-300 hover:bg-red-800 p-2 hover:text-amber-300 rounded-sm"
-              to="/"
+              to="/earist-extension-program/"
             >
               Home
             </Link>
             <Link
               onClick={closeMenu}
               className="dark:text-white dark:hover:text-[#dc2626] ease-in-out duration-300 hover:bg-red-800 p-2 hover:text-amber-300 rounded-sm"
-              to="/programs"
+              to="/earist-extension-program/programs"
             >
               Programs & Events
             </Link>
             <Link
               onClick={closeMenu}
               className="dark:text-white dark:hover:text-[#dc2626] ease-in-out duration-300 hover:bg-red-800 p-2 hover:text-amber-300 rounded-sm"
-              to="/news"
+              to="/earist-extension-program/news"
             >
               News
             </Link>
@@ -79,19 +79,19 @@ function Nav() {
         <div className="hidden md:flex gap-10 text-gray-700 text-xl">
           <Link
             className="dark:text-white dark:hover:text-[#dc2626] hover:bg-red-800 hover:p-2 p-2 ease-in-out duration-300 hover:text-amber-300 rounded-sm"
-            to="/"
+            to="/earist-extension-program/"
           >
             Home
           </Link>
           <Link
             className="dark:text-white dark:hover:text-[#dc2626] hover:bg-red-800 hover:p-2 p-2 ease-in-out duration-300 hover:text-amber-300 rounded-sm"
-            to="/programs"
+            to="/earist-extension-program/programs"
           >
             Programs & Events
           </Link>
           <Link
             className="dark:text-white dark:hover:text-[#dc2626] hover:bg-red-800 hover:p-2 ease-in-out duration-300 hover:text-amber-300 rounded-sm p-2"
-            to="/news"
+            to="/earist-extension-program/news"
           >
             News
           </Link>
