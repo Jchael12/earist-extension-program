@@ -1,3 +1,4 @@
+import { Outlet } from "react-router-dom";
 import Nav from "./components/Nav";
 import AppRoutes from "./Routes";
 
@@ -8,7 +9,7 @@ function App() {
       >
         <div className="md:mx-auto md:w-full min-h-screen">
             <Nav />
-            <AppRoutes />
+          <Outlet/>
         </div>
       </div>
     </>
