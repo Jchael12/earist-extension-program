@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import { useState } from "react";
-import logo from "../assets/logo.png"
+import logo from "../assets/logo.png";
+import earistLogo from "../assets/earist-logo-1.png";
 
 function Nav() {
   //transtion delay in navbar in mobile devices
@@ -22,7 +23,7 @@ function Nav() {
     }
   };
 
- // Function to handle link clicks and scroll to top
+  // Function to handle link clicks and scroll to top
   const handleLinkClick = (path) => {
     if (window.location.pathname === path) {
       window.scrollTo(0, 0);
@@ -53,7 +54,16 @@ function Nav() {
               d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
             />
           </svg>
-        <img src={logo} className="w-48 absolute right-0 top-[-48px] md:top-[-40px] md:left-0"/>
+          <img src={earistLogo} className="md:block hidden absolute w-24 top-1 md:left-10 right-0" />
+          <h1 className="md:ml-32 ml-14 top-10 absolute font-semibold md:text-lg text-red-900 uppercase">
+            Eulogio "Amang" Rodriguez Institute of Science and Technology
+          </h1>
+          {/* group logo
+          <img
+            src={logo}
+            className="w-48 hidden md:block absolute right-0 top-[-48px] md:top-[-40px] md:right-[870px]"/>
+            */
+          }
         </div>
         <div
           className={`md:hidden absolute left-5 top-20 dark:bg-gray-500/30 dark:hover:text-pink-600 ease-in-out dark:border-none bg-white z-10 border border-gray-200 rounded-lg shadow-lg p-4 ${
@@ -64,7 +74,7 @@ function Nav() {
                 outTransition
           }`}
         >
-          <div className="flex flex-col gap-6 text-gray-900 text-xl">
+          <div className="flex flex-col gap-6 text-gray-900 text-md">
             <Link
               onClick={closeMenu}
               className="dark:text-white dark:hover:text-[#dc2626] ease-in-out duration-300 hover:bg-red-800 p-2 hover:text-amber-300 rounded-sm"
@@ -88,7 +98,7 @@ function Nav() {
             </Link>
           </div>
         </div>
-        <div className="hidden md:flex gap-10 text-gray-700 text-xl">
+        <div className="hidden md:flex gap-10 text-gray-700 text-md uppercase">
           <Link
             onClick={() => handleLinkClick("/earist-extension-program/")}
             className="text-red-900 hover:bg-red-800 hover:p-2 p-2 ease-in-out duration-300 hover:text-amber-300 rounded-sm"
