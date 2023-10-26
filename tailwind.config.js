@@ -4,13 +4,16 @@ export default {
     "./index.html",
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
-  darkMode: 'class',
+  darkMode: "class",
   theme: {
+    backgroundImage: {
+      "bgMain": "url('./src/assets/try.png')",
+    },
     extend: {
       fontFamily: {
-        lexend: ["Lexend Deca", "sans-serif"]
-      }
+        lexend: ["Lexend Deca", "sans-serif"],
+      },
     },
   },
   plugins: [],
-}
+};

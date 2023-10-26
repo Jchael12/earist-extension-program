@@ -4,10 +4,10 @@ import Nav from "./components/Nav";
 function App() {
   return (
     <>
-      <div className="font-lexend bg-red-700 w-full transition duration-500 ease-in-out dark:text-stone-300">
+      <div className="font-lexend bg-bgMain bg-cover bg-no-repeat w-full transition duration-500 ease-in-out dark:text-stone-300 ">
         <div className="md:mx-auto md:w-full min-h-screen">
-            <Nav />
-          <Outlet/>
+          <Nav />
+          <Outlet />
         </div>
       </div>
     </>
