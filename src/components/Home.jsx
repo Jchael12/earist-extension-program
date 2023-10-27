@@ -1,4 +1,3 @@
-import React from "react";
 import ScrollCarousel from "scroll-carousel-react";
 import "../styles/shapeStyle.css";
 import About from "./About";
@@ -18,20 +17,6 @@ const Home = () => {
   return (
     <div className="overflow-hidden mt-28">
       <div className="flex flex-col md:flex-row items-center justify-between gap-6 p-12 w-full">
-        <div className="custom-shape-divider-bottom-1698169600 hidden md:block">
-          <svg
-            data-name="Layer 1"
-            xmlns="http://www.w3.org/2000/svg"
-            viewBox="0 0 1200 120"
-            preserveAspectRatio="none"
-          >
-            <path
-              d="M649.97 0L599.91 54.12 550.03 0 0 0 0 120 1200 120 1200 0 649.97 0z"
-              className="shape-fill"
-            >
-            </path>
-          </svg>
-        </div>
         <div className="flex flex-col items-center justify-between text-center md:mt-24 mt-20 md:p-10 p-12 bg-red-700/90 md:bg-red-700/90 w-screen md:w-full rounded-md border-t-2 border-amber-300">
           <motion.h1
             initial={{ x: -100, opacity: 0 }}
@@ -72,8 +57,21 @@ const Home = () => {
             delay: 1,
           }}
           src={bgImg}
-          className="rounded-md w-[1024px]"
+          className="rounded-md w-[800px] mt-6"
         />
+      </div>
+      <div className="custom-shape-divider-bottom-1698169600 hidden md:block">
+        <svg
+          data-name="Layer 1"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 1200 120"
+          preserveAspectRatio="none"
+        >
+          <path
+            d="M649.97 0L599.91 54.12 550.03 0 0 0 0 120 1200 120 1200 0 649.97 0z"
+            className="shape-fill"
+          ></path>
+        </svg>
       </div>
       <div className="flex flex-col md:flex-row gap-16 items-center justify-around">
         <motion.div
@@ -138,19 +136,13 @@ const Home = () => {
         </div>
       </div>
       <div>
-        <ScrollCarousel
-          autoplay
-          autoplaySpeed={1}
-        >
+        <ScrollCarousel autoplay autoplaySpeed={1}>
           {imageSrc.map((img, index) => (
             <div
               key={index}
               className="bg-gray-300/20 border-2 border-gray-300/70 rounded md:mt-60 w-full"
             >
-              <img
-                src={img}
-                className="object-cover h-96"
-              />
+              <img src={img} className="object-cover h-96" />
             </div>
           ))}
         </ScrollCarousel>

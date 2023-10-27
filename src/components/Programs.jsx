@@ -20,7 +20,7 @@ function Programs() {
 
   return (
     <>
-      <div className="flex items-center justify-center mt-28">
+      <div className="flex items-center justify-center mt-28 overflow-hidden">
         <div className="grid md:grid-cols-2 xl:grid-cols-4 gap-6 mt-24 z-10">
           {images.map((image) => (
             <Link to={image.link} key={image.id}>
@@ -42,7 +42,7 @@ function Programs() {
           ))}
         </div>
       </div>
-      <div className="custom-shape-divider-bottom-1698169600 hidden md:block">
+      <div className="custom-shape-divider-bottom-1698169605 hidden md:block">
         <svg
           data-name="Layer 1"
           xmlns="http://www.w3.org/2000/svg"
@@ -52,8 +52,7 @@ function Programs() {
           <path
             d="M649.97 0L599.91 54.12 550.03 0 0 0 0 120 1200 120 1200 0 649.97 0z"
             className="shape-fill"
-          >
-          </path>
+          ></path>
         </svg>
       </div>
     </>
