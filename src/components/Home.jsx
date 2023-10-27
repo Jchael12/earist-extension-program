@@ -17,12 +17,12 @@ const Home = () => {
   return (
     <div className="overflow-hidden mt-28">
       <div className="flex flex-col md:flex-row items-center justify-between gap-6 p-12 w-full">
-        <div className="flex flex-col items-center justify-between text-center md:mt-24 mt-20 md:p-10 p-12 bg-red-700/90 md:bg-red-700/90 w-screen md:w-full rounded-md border-t-2 border-amber-300">
+        <div className="flex flex-col break-word items-center justify-between text-center md:mt-24 mt-20 md:p-10 p-12 bg-red-700/90 md:bg-red-700/90 w-screen md:w-[600px] rounded-md border-t-2 border-amber-300">
           <motion.h1
             initial={{ x: -100, opacity: 0 }}
             animate={{ x: 0, opacity: 1 }}
             transition={{ duration: 1.5, ease: "easeInOut" }}
-            className="md:font-bold md:text-4xl text-3xl text-amber-300"
+            className="md:font-bold md:text-3xl text-3xl text-amber-300"
           >
             Earist Cavite Extension Programs of Information Technology
           </motion.h1>
@@ -30,19 +30,13 @@ const Home = () => {
             initial={{ x: -100, opacity: 0 }}
             animate={{ x: 0, opacity: 1 }}
             transition={{ duration: 1.5, ease: "easeInOut" }}
-            className="hidden md:block mt-14 text-justify px-7 text-stone-100"
+            className="hidden md:block mt-10 text-justify px-2 break-word text-stone-100"
           >
             Lorem ipsum dolor sit amet, officia excepteur ex fugiat
             reprehenderit enim labore culpa sint ad nisi Lorem pariatur mollit
             ex esse exercitation amet. Nisi anim cupidatat excepteur officia.
             Reprehenderit nostrud nostrud ipsum Lorem est aliquip amet voluptate
-            voluptate dolor minim nulla est proident. Nostrud officia pariatur
-            ut officia. Sit irure elit esse ea nulla sunt ex occaecat
-            reprehenderit commodo officia dolor Lorem duis laboris cupidatat
-            officia voluptate. Culpa proident adipisicing id nulla nisi laboris
-            ex in Lorem sunt duis officia eiusmod. Aliqua reprehenderit commodo
-            ex non excepteur duis sunt velit enim. Voluptate laboris sint
-            cupidatat ullamco ut ea consectetur et est culpa et culpa duis.
+            voluptate dolor minim nulla est proident.
           </motion.p>
         </div>
         <motion.img
@@ -57,7 +51,7 @@ const Home = () => {
             delay: 1,
           }}
           src={bgImg}
-          className="rounded-md w-[800px] mt-6"
+          className="rounded-md w-[700px] mt-24"
         />
       </div>
       <div className="custom-shape-divider-bottom-1698169600 hidden md:block">
@@ -81,7 +75,7 @@ const Home = () => {
           }}
           animate={{ y: 0, opacity: 1 }}
           transition={{ duration: 1.5, ease: "easeInOut" }}
-          className="w-screen md:w-1/2 lg:w-1/3 h-8/12 p-8 ml-4 text-white text-center rounded-md mt-42 bg-red-700/90 border-t-2 border-amber-300"
+          className="w-screen md:w-1/2 lg:w-1/2 h-8/12 md:p-10 p-5 text-white text-center rounded-md mt-20 bg-red-700/90 border-t-2 border-amber-300"
         >
           <motion.h1
             initial={{
@@ -109,7 +103,7 @@ const Home = () => {
             citizen of the Philippines.
           </motion.p>
         </motion.div>
-        <div className="w-screen md:w-1/2 lg:w-1/3 h-8/12 p-8 mr-4 mb-3 text-white text-center rounded-md bg-red-700/90 border-t-2 border-amber-300">
+        <div className="w-screen md:w-1/2 lg:w-1/2 h-8/12 mt-5 md:mr-4 p-8 text-white text-center rounded-md bg-red-700/90 border-t-2 border-amber-300">
           <motion.h1
             initial={{
               opacity: 0,
